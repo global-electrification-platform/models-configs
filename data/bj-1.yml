@@ -123,7 +123,7 @@ filters:
     type: range  
 map:
   modelVT:
-    url: mapbox://devseed.7p9es486
+    url: mapbox://derilinx.bj-1
     id: bj-1
   externalLayers:
     - id: mapbox_satellite
