@@ -181,3 +181,5 @@ map:
         url: https://data.humdata.org/dataset/burundi-healthsites
       vectorLayers:
         - PROJ_LIB
+sourceData:
+  dataset: 'https://energydata.info/dataset/eritrea-global-electrification-platform-gep'
