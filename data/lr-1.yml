@@ -181,3 +181,5 @@ map:
         url: https://data.humdata.org/dataset/burundi-healthsites
       vectorLayers:
         - PROJ_LIB
+sourceData:
+  dataset: 'https://energydata.info/dataset/liberia-global-electrification-platform-gep'
