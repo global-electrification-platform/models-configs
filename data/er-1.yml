@@ -182,4 +182,4 @@ map:
       vectorLayers:
         - PROJ_LIB
 sourceData:
-  dataset: 'https://energydata.info/dataset/eritrea-global-electrification-platform-gep'
+  scenarios: 'https://energydata.info/dataset/eritrea-global-electrification-platform-gep'

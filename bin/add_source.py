@@ -13,6 +13,6 @@ with open('gep-data.csv', 'r') as f:
         proc = subprocess.run("cat >> data/%s.yml" % model, shell=True,
                               encoding='utf8',
                               input="""sourceData:
-  dataset: '%s'
+  scenarios: '%s'
 """ % url)
         
