@@ -172,3 +172,6 @@ map:
         url: https://mapre.lbl.gov/
       vectorLayers:
         - data_layer
+sourceData:
+  scenarios: null
+  clusters: null

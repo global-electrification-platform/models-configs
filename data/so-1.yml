@@ -183,3 +183,4 @@ map:
         - PROJ_LIB
 sourceData:
   scenarios: 'https://energydata.info/dataset/somalia-global-electrification-platform-gep'
+  clusters: null

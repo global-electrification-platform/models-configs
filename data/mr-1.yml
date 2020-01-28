@@ -183,3 +183,4 @@ map:
         - PROJ_LIB
 sourceData:
   scenarios: 'https://energydata.info/dataset/mauritania-global-electrification-platform-gep'
+  clusters: null

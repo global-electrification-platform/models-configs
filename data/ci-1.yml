@@ -181,3 +181,6 @@ map:
         url: https://data.humdata.org/dataset/burundi-healthsites
       vectorLayers:
         - PROJ_LIB
+sourceData:
+  scenarios: null
+  clusters: null

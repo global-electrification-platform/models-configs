@@ -1,4 +1,4 @@
-﻿id: 'fm-1'
+id: 'fm-1'
 name: 'Federal States of Micronesia v1.0'
 updatedAt: '2019-12-11'
 version: 'v1.0'
@@ -164,3 +164,6 @@ map:
         url: https://mapre.lbl.gov/
       vectorLayers:
         - data_layer
+sourceData:
+  scenarios: null
+  clusters: null

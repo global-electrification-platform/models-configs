@@ -183,3 +183,4 @@ map:
         - PROJ_LIB
 sourceData:
   scenarios: 'https://energydata.info/dataset/guinea-bissau-global-electrification-platform-gep'
+  clusters: null
