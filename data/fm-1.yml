@@ -3,7 +3,7 @@ name: 'Federal States of Micronesia v1.0'
 updatedAt: '2019-12-11'
 version: 'v1.0'
 type: onsset
-country:FM
+country: FM
 baseYear: 2018
 timesteps:
   - 2025

@@ -1,9 +1,9 @@
-﻿id: 'pb-1'
+﻿id: 'sb-1'
 name: 'Solomon Islands v1.0'
 updatedAt: '2019-12-11'
 version: 'v1.0'
 type: onsset
-country:PB
+country: SB
 baseYear: 2018
 timesteps:
   - 2025
@@ -115,8 +115,8 @@ filters:
     type: range  
 map:
   modelVT:
-    url: mapbox://derilinx.pb-1/
-    id: pb-1
+    url: mapbox://derilinx.sb-1/
+    id: sb-1
   externalLayers:
     - id: mapbox_satellite
       label: Mapbox Satellite
