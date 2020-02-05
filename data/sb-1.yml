@@ -137,7 +137,7 @@ map:
     - id: healthsites
       label: Healthsites
       type: 'vector'
-      url: mapbox://devseed.ajv4fl8l?access_token=pk.eyJ1IjoiYWxla29yIiwiYSI6ImNqdGZwc2FoaDBkNjAzeXJ1b3B6bzR6Z2IifQ.m6OQgD-IfmhaVS3Xh5XNoQ
+      url: mapbox://derilinx.Healthsites
       description: This dataset shows the list of operating health facilities.
       source:
         label: Global Healthsites Mapping Project
