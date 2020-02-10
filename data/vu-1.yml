@@ -147,7 +147,7 @@ map:
     - id: schools
       label: Schools (OpenStreetMap)
       type: 'vector'
-      url: mapbox://devseed.5hgjq12r?access_token=pk.eyJ1IjoiYWxla29yIiwiYSI6ImNqdGZwc2FoaDBkNjAzeXJ1b3B6bzR6Z2IifQ.m6OQgD-IfmhaVS3Xh5XNoQ
+      url: mapbox://derilinx.Schools
       description: This dataset shows the schools from OpenStreetMap.
       source:
         label: OpenStreetMap
