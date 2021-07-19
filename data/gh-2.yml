@@ -58,7 +58,7 @@ levers:
   - id: 4
     label: Intermediate investment plan
     description: 
-     'Definition: Indicates the electrification rate to be achieved in the first few years of the analysis (2025). In GEP it is assumed that final electrification rate is 100%, analysis considers 12 years (2018-2030) with an intermediate time step of 7 years. Not capped scenario assumes that the electrification rate increases linearly over the modelling years; no restrictions are set in terms of feasible grid connections per year. Capped growth scenario assumes that the electrification rate increases as in the first scenario but is subject to grid connections limitation, equal to 2.5% of population per year. In this case, grid electrified population slowly ramps up over the years of analysis following often an S-like curve.'
+     'Definition: Indicates the electrification rate to be achieved in the first few years of the analysis (2025). In GEP it is assumed that final electrification rate is 100%, analysis considers 10 years (2020-2030) with an intermediate time step of 5 years. Not capped scenario assumes that the electrification rate increases linearly over the modelling years; no restrictions are set in terms of feasible grid connections per year. Capped growth scenario assumes that the electrification rate increases as in the first scenario but is subject to grid connections limitation, equal to 2.5% of population per year. In this case, grid electrified population slowly ramps up over the years of analysis following often an S-like curve.'
     options:
       - id: 0
         value: Not capped
@@ -67,7 +67,7 @@ levers:
   - id: 5
     label: Rollout plan
     description: 
-     'Definition: Examines the potential of electrification rollout plans for the country. Nationwide least cost approach works as follows: First, connections are ramped up in all already grid connected settlements. Then, un-electrified settlements are prioritized based on lowest investment cost per capita until the target electrification rate is reached. Note! a generation capacity limit for the centralized grid is applied in order to keep grid expansion to sensible levels. Grid connection within 2 km presents a rollout plan that considers “forced” grid connection in all settlements located within 2 km from existing MV network.'
+     'Definition: Examines the potential of electrification rollout plans for the country. Nationwide least cost approach works as follows: First, connections are ramped up in all already grid connected settlements. Then, un-electrified settlements are prioritized based on lowest investment cost per capita until the target electrification rate is reached. Note! a generation capacity limit for the centralized grid is applied in order to keep grid expansion to sensible levels. Grid connection within 2 km presents a rollout plan that considers “forced” grid connection in all settlements located within 2 km from existing MV network. Beyond 2 km of the MV-lines the least-cost technology is selected.'
     options:
       - id: 0
         value: Nationwide Least Cost approach

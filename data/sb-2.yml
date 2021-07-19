@@ -19,7 +19,7 @@ description:
 levers:
   - id: 0
     label: Electricity demand target
-    description: 
+    description:
      'Definition: Examines the electricity demand target expressed in kWh/capita/year. The top-down scenarios introduce consistent Tier-based demand targets across all settlements based on their urban (U) and rural (R) status. In the low demand scenario, the urban demand target is informed by the average consumption observed in currently electrified areas in the country, translated into the nearest access Tier (e.g. U4 – Urban Tier 4). Low rural demand target is always set to Tier 1 (e.g. R1 – Rural Tier 1). The high demand target scenario reflects more aggressive goals. Urban demand target is increased by 1 Tier, unless already Tier 5, while rural demand target is increased by 2 Tiers. The bottom-up scenario assigns a unique demand target (kWh/cap/year) in each settlement, based on local poverty rate and GDP level.'
     options:
       - id: 0
@@ -30,22 +30,22 @@ levers:
         value: Top-down demand target - High (U3R3)
   - id: 1
     label: Social & commercial uses
-    description: 
-     'Definition: Examines the inclusion of electricity demand for social (health and education facilities) and productive (small-scale commercial) uses. Health and education facilities were obtained from WHO and OSM respectively, and small-scale commercial use is proxied by GDP and accessibility maps'
+    description:
+     'Definition: Examines the inclusion of electricity demand for social (health and education facilities) and productive (small-scale commercial) uses. Health and education facilities were obtained from WHO and OSM, and small-scale commercial use is proxied by GDP and accessibility maps'
     options:
       - id: 0
         value: Social and productive uses demand included
       - id: 1
-        value: Residential demand only 
+        value: Residential demand only
   - id: 2
-    label: PV system cost 
-    description: 
+    label: PV system cost
+    description:
      'Definition: Examines the role of PV system costs on electrification results. It should be noted that the stand-alone PV costs, as used in GEP, reflect both PV module cost and Balance of System (BoS) expressed in $/kW. Expected PV cost scenario considers PV system costs as expected to vary in the modeling period. Low PV cost scenario considers PV system costs decreased by 50% compared to the expected scenario values.'
     options:
       - id: 0
         value: Expected PV cost
       - id: 1
-        value: Low PV cost (-50%)       
+        value: Low PV cost (-50%)
 filters:
   - id: 0
     key: Pop
@@ -90,7 +90,7 @@ filters:
     key: InvestmentCapita
     label: Investment cost per capita ($)
     timestep: true
-    type: range  
+    type: range
   - id: 5
     key: Admin1
     label: Admin 1 regions
@@ -186,10 +186,10 @@ map:
       label: Stand-alone PV
       color: '#38A800'
     - id: 5
-      label: Mini-grid PV Hybrid 
+      label: Mini-grid PV Hybrid
       color: '#00C5FF'
     - id: 6
-      label: Mini-grid Wind Hybrid 
+      label: Mini-grid Wind Hybrid
       color: '#A900E6'
     - id: 1
       label: Existing grid
