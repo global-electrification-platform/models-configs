@@ -1,0 +1,13 @@
+id: 'so-0'
+name: 'Somalia OnSSET v1.0'
+updatedAt: '2020-02-24'
+baseYear: 2020
+version: 'v1.0'
+type: onsset
+country: SO
+externalUrl: https://somalia.gep.kartoza.com/gep
+description:
+  'This model is developed using the Open Source Spatial Electrification Tool (OnSSET), and hosted at the Somalia Electrification Platform.'
+attribution:
+  author: 'KTH'
+  url: 'https://www.energy.kth.se/energy-systems/about-the-division-of-energy-systems-1.937036'

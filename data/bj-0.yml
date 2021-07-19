@@ -1,0 +1,13 @@
+id: 'bj-0'
+name: 'Benin OnSSET v1.0'
+updatedAt: '2020-10-13'
+baseYear: 2020
+version: 'v1.0'
+type: onsset
+country: BJ
+externalUrl: https://benin.gep.kartoza.com/gep
+description:
+  'This model is developed using the Open Source Spatial Electrification Tool (OnSSET), and hosted at the Benin Electrification Platform.'
+attribution:
+  author: 'KTH'
+  url: 'https://www.energy.kth.se/energy-systems/about-the-division-of-energy-systems-1.937036'
