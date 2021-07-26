@@ -1,7 +1,7 @@
 id: 'so-2'
-name: 'Somalia OnSSET v2.0'
+name: 'Somalia OnSSET v2021'
 updatedAt: '2021-04-27'
-version: 'v2.0'
+version: 'GEP'
 type: onsset
 country: SO
 baseYear: 2020
@@ -15,7 +15,7 @@ attribution:
   author: 'KTH'
   url: 'https://www.energy.kth.se/energy-systems/about-the-division-of-energy-systems-1.937036'
 description:
-  'This model is developed using the Open Source Spatial Electrification Tool (OnSSET). Full access to the source code behind this model is available at https://github.com/global-electrification-platform. For more information on the functionality of the model please contact the development team at KTH.'
+  'This model is developed using the Open Source Spatial Electrification Tool (OnSSET). Full access to the source code behind this model is available at https://github.com/global-electrification-platform.'
 levers:
   - id: 0
     label: Electricity demand target
