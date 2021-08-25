@@ -244,3 +244,6 @@ map:
     - id: 99
       label: Unelectrified
       color: '#808080'
+sourceData:
+  scenarios: 'https://energydata.info/dataset/liberia-global-electrification-platform-gep'
+  clusters: null

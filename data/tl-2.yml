@@ -238,3 +238,6 @@ map:
     - id: 99
       label: Unelectrified
       color: '#808080'
+sourceData:
+  scenarios: 'https://energydata.info/dataset/timor-leste-global-electrification-platform-gep'
+  clusters: null

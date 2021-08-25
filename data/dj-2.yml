@@ -214,3 +214,6 @@ map:
     - id: 99
       label: Unelectrified
       color: '#808080'
+sourceData:
+  scenarios: 'https://energydata.info/dataset/djibouti-global-electrification-platform-gep'
+  clusters: null

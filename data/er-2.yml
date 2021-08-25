@@ -220,3 +220,6 @@ map:
     - id: 99
       label: Unelectrified
       color: '#808080'
+sourceData:
+  scenarios: 'https://energydata.info/dataset/eritrea-global-electrification-platform-gep'
+  clusters: null
