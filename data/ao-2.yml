@@ -249,10 +249,10 @@ map:
       color: '#A900E6'
     - id: 1
       label: Existing grid
-      color: '#FF0000'
+      color: '#121452'
     - id: 2
       label: New grid connection
-      color: '#FFFFCD'
+      color: '#a6aaff'
     - id: 99
       label: Unelectrified
       color: '#808080'
