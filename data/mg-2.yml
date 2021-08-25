@@ -8,9 +8,6 @@ baseYear: 2020
 timesteps:
   - 2025
   - 2030
-sourceData:
-  clusters: null
-  scenarios: null
 attribution:
   author: 'KTH'
   url: 'https://www.energy.kth.se/energy-systems/about-the-division-of-energy-systems-1.937036'
