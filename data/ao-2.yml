@@ -234,19 +234,19 @@ map:
   techLayersConfig:
     - id: 7
       label: Mini-grid Hydro
-      color: '#E6E600'
+      color: '#28e66d'
     - id: 3
       label: Stand-alone PV
-      color: '#38A800'
+      color: '#ffc700'
     - id: 5
       label: Mini-grid PV Hybrid 
-      color: '#00C5FF'
+      color: '#e628a0'
     - id: 6
       label: Mini-grid Wind Hybrid 
-      color: '#A900E6'
+      color: '#1b8f4d'
     - id: 1
       label: Existing grid
-      color: '#121452'
+      color: '#4e53de'
     - id: 2
       label: New grid connection
       color: '#a6aaff'
