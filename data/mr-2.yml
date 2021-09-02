@@ -54,6 +54,7 @@ levers:
         value: Low PV cost (-50%)       
   - id: 4
     label: Intermediate investment plan
+    default: 1
     description: 
      'Definition: Indicates the electrification rate to be achieved in the first few years of the analysis (2025). In GEP it is assumed that final electrification rate is 100%, analysis considers 12 years (2018-2030) with an intermediate time step of 7 years. Not capped scenario assumes that the electrification rate increases linearly over the modelling years; no restrictions are set in terms of feasible grid connections per year. Capped growth scenario assumes that the electrification rate increases as in the first scenario but is subject to grid connections limitation, equal to 2.5% of population per year. In this case, grid electrified population slowly ramps up over the years of analysis following often an S-like curve.'
     options:
