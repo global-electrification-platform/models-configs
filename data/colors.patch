@@ -1,0 +1,136 @@
+diff --git a/data/ao-2.yml b/data/ao-2.yml
+index 7579803..c2af5b3 100644
+--- a/data/ao-2.yml
++++ b/data/ao-2.yml
+@@ -237,22 +237,22 @@ map:
+   techLayersConfig:
+     - id: 7
+       label: Mini-grid Hydro
+-      color: '#E6E600'
++      color: '#FF0000'
+     - id: 3
+       label: Stand-alone PV
+-      color: '#38A800'
++      color: '#004DA9'
+     - id: 5
+       label: Mini-grid PV Hybrid
+-      color: '#00C5FF'
++      color: '#73FFDF'
+     - id: 6
+       label: Mini-grid Wind Hybrid
+-      color: '#A900E6'
++      color: '#732600'
+     - id: 1
+       label: Existing grid
+-      color: '#FF0000'
++      color: '#000000'
+     - id: 2
+       label: New grid connection
+-      color: '#FFFFCD'
++      color: '#FFE600'
+     - id: 99
+       label: Unelectrified
+       color: '#808080'
+\ No newline at end of file
+diff --git a/data/gh-2.yml b/data/gh-2.yml
+index 98a4d9d..896349b 100644
+--- a/data/gh-2.yml
++++ b/data/gh-2.yml
+@@ -213,22 +213,22 @@ map:
+   techLayersConfig:
+     - id: 7
+       label: Mini-grid Hydro
+-      color: '#E6E600'
++      color: '#FF0000'
+     - id: 3
+       label: Stand-alone PV
+-      color: '#38A800'
++      color: '#004DA9'
+     - id: 5
+       label: Mini-grid PV Hybrid
+-      color: '#00C5FF'
++      color: '#73FFDF'
+     - id: 6
+       label: Mini-grid Wind Hybrid
+-      color: '#A900E6'
++      color: '#732600'
+     - id: 1
+       label: Existing grid
+-      color: '#FF0000'
++      color: '#000000'
+     - id: 2
+       label: New grid connection
+-      color: '#FFFFCD'
++      color: '#FFE600'
+     - id: 99
+       label: Unelectrified
+       color: '#808080'
+\ No newline at end of file
+diff --git a/data/ke-2.yml b/data/ke-2.yml
+index 6398336..0aa2abd 100644
+--- a/data/ke-2.yml
++++ b/data/ke-2.yml
+@@ -207,22 +207,22 @@ map:
+   techLayersConfig:
+     - id: 7
+       label: Mini-grid Hydro
+-      color: '#E6E600'
++      color: '#00518E'
+     - id: 3
+       label: Stand-alone PV
+-      color: '#38A800'
++      color: '#FFD38C'
+     - id: 5
+       label: Mini-grid PV Hybrid
+-      color: '#00C5FF'
++      color: '#436436'
+     - id: 6
+       label: Mini-grid Wind Hybrid
+-      color: '#A900E6'
++      color: '#8F77AD'
+     - id: 1
+       label: Existing grid
+-      color: '#FF0000'
++      color: '#632523'
+     - id: 2
+       label: New grid connection
+-      color: '#FFFFCD'
++      color: '#73B2FF'
+     - id: 99
+       label: Unelectrified
+       color: '#808080'
+\ No newline at end of file
+diff --git a/data/mw-2.yml b/data/mw-2.yml
+index afda38b..304c608 100644
+--- a/data/mw-2.yml
++++ b/data/mw-2.yml
+@@ -195,22 +195,22 @@ map:
+   techLayersConfig:
+     - id: 7
+       label: Mini-grid Hydro
+-      color: '#E6E600'
++      color: '#00518E'
+     - id: 3
+       label: Stand-alone PV
+-      color: '#38A800'
++      color: '#FFD38C'
+     - id: 5
+       label: Mini-grid PV Hybrid
+-      color: '#00C5FF'
++      color: '#436436'
+     - id: 6
+       label: Mini-grid Wind Hybrid
+-      color: '#A900E6'
++      color: '#8F77AD'
+     - id: 1
+       label: Existing grid
+-      color: '#FF0000'
++      color: '#632523'
+     - id: 2
+       label: New grid connection
+-      color: '#FFFFCD'
++      color: '#73B2FF'
+     - id: 99
+       label: Unelectrified
+       color: '#808080'
+\ No newline at end of file

@@ -1,0 +1,12 @@
+diff --git a/data/ao-2.yml b/data/ao-2.yml
+index 27a19e9..2da2e71 100644
+--- a/data/ao-2.yml
++++ b/data/ao-2.yml
+@@ -54,6 +54,7 @@ levers:
+         value: Low PV cost (-50%)       
+   - id: 4
+     label: Intermediate investment plan
++    default: 1
+     description: 
+      'Definition: Definition: Examines the electrification rate to be achieved in the first few years of the analysis (2025). In the GEP it is assumed that final electrification rate is 100%, analysis considers 10 years (2020-2030) with an intermediate time step of 5 years. Not capped scenario assumes that the electrification rate increases linearly over the modelling years; no restrictions are set in terms of feasible grid connections per year. Capped growth scenario assumes that the electrification rate increases as in the first scenario but is subject to a maximum grid connections limitation, equal to 2.5% of population per year'
+     options:
