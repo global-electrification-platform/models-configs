@@ -32,7 +32,7 @@ levers:
     label: Social & commercial uses
     description: 
      'Definition: Examines the inclusion of electricity demand for social (health and education facilities) and productive (small-scale commercial) uses. Health and education facilities were obtained from WHO and OSM, and small-scale commercial use is proxied by GDP and accessibility maps'
-    opti
+    options:
       - id: 0
         value: Social and productive uses demand included
       - id: 1
