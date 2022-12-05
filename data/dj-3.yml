@@ -1,7 +1,7 @@
 id: 'dj-3'
 name: 'Djibouti OnSSET Climate'
 updatedAt: '2022-08-18'
-version: 'v2.0'
+version: 'climate-1.0'
 type: onsset
 country: DJ
 baseYear: 2020

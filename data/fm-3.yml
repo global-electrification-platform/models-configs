@@ -1,7 +1,7 @@
 id: 'fm-3'
 name: 'Micronesia (Federal States of) OnSSET Climate'
 updatedAt: '2022-08-22'
-version: 'v2.0'
+version: 'climate-1.0'
 type: onsset
 country: FM
 baseYear: 2020
