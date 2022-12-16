@@ -2,7 +2,7 @@ id: 'so-0'
 name: 'Somalia Energy Platform'
 updatedAt: '2020-02-24'
 baseYear: 2020
-version: 'v1.0'
+version: 'External'
 type: onsset
 country: SO
 externalUrl: https://somalia.gep.kartoza.com/gep

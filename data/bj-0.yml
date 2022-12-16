@@ -2,7 +2,7 @@ id: 'bj-0'
 name: 'Benin Energy Platform'
 updatedAt: '2020-10-13'
 baseYear: 2020
-version: 'v1.0'
+version: 'External'
 type: onsset
 country: BJ
 externalUrl: https://benin.gep.kartoza.com/gep
