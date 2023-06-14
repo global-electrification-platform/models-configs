@@ -45,7 +45,7 @@ levers:
       - id: 0
         value: No carbon cost/tax
       - id: 1
-        value: 51 USD/tonCO2eq 
+        value: 106 USD/tonCO2eq 
   - id: 3
     label: PV system cost 
     description: 
