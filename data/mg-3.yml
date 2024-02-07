@@ -64,6 +64,7 @@ levers:
         value: Not capped
       - id: 1
         value: Capped annual connections
+    default: 1
   - id: 5
     label: Rollout plan
     description: 
