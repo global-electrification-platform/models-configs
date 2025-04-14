@@ -1,12 +1,14 @@
 attribution:
-  author: Vida
+  author: VIDA
   url: https://vida.place
 baseYear: 2020
 country: ZW
-description: DRE Planning -- TBD Zimbabwe
+description: This external platform allows users to dive into the settlement-level
+  details of planning for Distributed Renewable Energy (DRE). Identify and explore
+  population, number of buildings, and demand in settlements across the country.
 externalUrl: https://map.vida.place/public/workspace/ee330c6f-097f-445f-b4aa-21e4bcfa3211
 id: zw-dre
-name: Zimbabwe - DRE Planning Platform
-type: vida
-updatedAt: '2020-10-13'
+name: Zimbabwe DRE Atlas
+type: VIDA
+updatedAt: '2025-01-01'
 version: External

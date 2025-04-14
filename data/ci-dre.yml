@@ -1,12 +1,14 @@
 attribution:
-  author: Vida
+  author: VIDA
   url: https://vida.place
 baseYear: 2020
 country: CI
-description: "DRE Planning -- TBD C\xF4te d'Ivoire"
+description: This external platform allows users to dive into the settlement-level
+  details of planning for Distributed Renewable Energy (DRE). Identify and explore
+  population, number of buildings, and demand in settlements across the country.
 externalUrl: https://map.vida.place/public/workspace/d47f693f-a838-4f60-b926-d804ec9ac37c
 id: ci-dre
-name: "C\xF4te d'Ivoire - DRE Planning Platform"
-type: vida
-updatedAt: '2020-10-13'
+name: "C\xF4te d'Ivoire DRE Atlas"
+type: VIDA
+updatedAt: '2025-01-01'
 version: External

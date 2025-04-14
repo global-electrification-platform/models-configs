@@ -1,12 +1,14 @@
 attribution:
-  author: Vida
+  author: VIDA
   url: https://vida.place
 baseYear: 2020
 country: NI
-description: DRE Planning -- TBD Nicaragua
+description: This external platform allows users to dive into the settlement-level
+  details of planning for Distributed Renewable Energy (DRE). Identify and explore
+  population, number of buildings, and demand in settlements across the country.
 externalUrl: https://map.vida.place/public/workspace/8799fbbc-26a0-4aca-9e64-8cd0ed3c7013
 id: ni-dre
-name: Nicaragua - DRE Planning Platform
-type: vida
-updatedAt: '2020-10-13'
+name: Nicaragua DRE Atlas
+type: VIDA
+updatedAt: '2025-01-01'
 version: External

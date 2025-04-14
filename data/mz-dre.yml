@@ -1,12 +1,14 @@
 attribution:
-  author: Vida
+  author: VIDA
   url: https://vida.place
 baseYear: 2020
 country: MZ
-description: DRE Planning -- TBD Mozambique
+description: This external platform allows users to dive into the settlement-level
+  details of planning for Distributed Renewable Energy (DRE). Identify and explore
+  population, number of buildings, and demand in settlements across the country.
 externalUrl: https://map.vida.place/public/workspace/1d0ada86-1e7c-4806-8053-316d6ba70d2b
 id: mz-dre
-name: Mozambique - DRE Planning Platform
-type: vida
-updatedAt: '2020-10-13'
+name: Mozambique DRE Atlas
+type: VIDA
+updatedAt: '2025-01-01'
 version: External

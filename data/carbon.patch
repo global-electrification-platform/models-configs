@@ -1,0 +1,23 @@
+diff --git a/data/vu-3.yml b/data/vu-3.yml
+index dcec5af..5808f39 100644
+--- a/data/vu-3.yml
++++ b/data/vu-3.yml
+@@ -38,14 +38,14 @@ levers:
+       - id: 1
+         value: Residential demand only
+   - id: 2
+-    label: Carbon cost
++    label: Carbon price
+     description:
+-     'Definition: Examines the effect of a carbon tax (affecting both the centralized grid electricity generation and diesel used in mini-grids) on the technology mix and emissions.'
++     'Definition: Examines the effect of the Shadow Price of Carbon (affecting both the centralized grid electricity generation and diesel used in mini-grids) on the technology mix and emissions. 106 USD/tonCO2eq reflects the average US CPI adjusted value (in 2022 USD) for the high Shadow Price of Carbon for 2020-2030 from the World Bank.'
+     options:
+       - id: 0
+-        value: No carbon cost/tax
++        value: No carbon price
+       - id: 1
+-        value: 106 USD/tonCO2eq 
++        value: 106 USD/tonCO2eq (average)
+   - id: 3
+     label: PV system cost
+     description:

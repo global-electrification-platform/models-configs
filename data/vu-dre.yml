@@ -1,12 +1,14 @@
 attribution:
-  author: Vida
+  author: VIDA
   url: https://vida.place
 baseYear: 2020
 country: VU
-description: DRE Planning -- TBD Vanuatu
+description: This external platform allows users to dive into the settlement-level
+  details of planning for Distributed Renewable Energy (DRE). Identify and explore
+  population, number of buildings, and demand in settlements across the country.
 externalUrl: https://map.vida.place/public/workspace/3036cd62-1a2e-4524-ac8f-b5d049005ca5
 id: vu-dre
-name: Vanuatu - DRE Planning Platform
-type: vida
-updatedAt: '2020-10-13'
+name: Vanuatu DRE Atlas
+type: VIDA
+updatedAt: '2025-01-01'
 version: External

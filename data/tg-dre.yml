@@ -1,12 +1,14 @@
 attribution:
-  author: Vida
+  author: VIDA
   url: https://vida.place
 baseYear: 2020
 country: TG
-description: DRE Planning -- TBD Togo
+description: This external platform allows users to dive into the settlement-level
+  details of planning for Distributed Renewable Energy (DRE). Identify and explore
+  population, number of buildings, and demand in settlements across the country.
 externalUrl: https://map.vida.place/public/workspace/00e14742-a5f7-46c0-9bc8-67d7f9d1fd29
 id: tg-dre
-name: Togo - DRE Planning Platform
-type: vida
-updatedAt: '2020-10-13'
+name: Togo DRE Atlas
+type: VIDA
+updatedAt: '2025-01-01'
 version: External

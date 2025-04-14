@@ -1,12 +1,14 @@
 attribution:
-  author: Vida
+  author: VIDA
   url: https://vida.place
 baseYear: 2020
 country: PG
-description: DRE Planning -- TBD Papua New Guinea
+description: This external platform allows users to dive into the settlement-level
+  details of planning for Distributed Renewable Energy (DRE). Identify and explore
+  population, number of buildings, and demand in settlements across the country.
 externalUrl: https://map.vida.place/public/workspace/a3331247-ed52-45c8-b27f-eb09609ccd21
 id: pg-dre
-name: Papua New Guinea - DRE Planning Platform
-type: vida
-updatedAt: '2020-10-13'
+name: Papua New Guinea DRE Atlas
+type: VIDA
+updatedAt: '2025-01-01'
 version: External

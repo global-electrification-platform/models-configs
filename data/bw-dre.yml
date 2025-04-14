@@ -1,12 +1,14 @@
 attribution:
-  author: Vida
+  author: VIDA
   url: https://vida.place
 baseYear: 2020
 country: BW
-description: DRE Planning -- TBD Botswana
+description: This external platform allows users to dive into the settlement-level
+  details of planning for Distributed Renewable Energy (DRE). Identify and explore
+  population, number of buildings, and demand in settlements across the country.
 externalUrl: https://map.vida.place/public/workspace/fa1fcaf6-3c58-4499-a674-4875e62e5f22
 id: bw-dre
-name: Botswana - DRE Planning Platform
-type: vida
-updatedAt: '2020-10-13'
+name: Botswana DRE Atlas
+type: VIDA
+updatedAt: '2025-01-01'
 version: External

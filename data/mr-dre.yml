@@ -1,12 +1,14 @@
 attribution:
-  author: Vida
+  author: VIDA
   url: https://vida.place
 baseYear: 2020
 country: MR
-description: DRE Planning -- TBD Mauritania
+description: This external platform allows users to dive into the settlement-level
+  details of planning for Distributed Renewable Energy (DRE). Identify and explore
+  population, number of buildings, and demand in settlements across the country.
 externalUrl: https://map.vida.place/public/workspace/953c7580-fe94-4642-8492-0095c67959e6
 id: mr-dre
-name: Mauritania - DRE Planning Platform
-type: vida
-updatedAt: '2020-10-13'
+name: Mauritania DRE Atlas
+type: VIDA
+updatedAt: '2025-01-01'
 version: External

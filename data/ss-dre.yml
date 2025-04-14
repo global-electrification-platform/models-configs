@@ -1,12 +1,14 @@
 attribution:
-  author: Vida
+  author: VIDA
   url: https://vida.place
 baseYear: 2020
 country: SS
-description: DRE Planning -- TBD South Sudan
+description: This external platform allows users to dive into the settlement-level
+  details of planning for Distributed Renewable Energy (DRE). Identify and explore
+  population, number of buildings, and demand in settlements across the country.
 externalUrl: https://map.vida.place/public/workspace/090a75d9-1562-447f-bf87-1cd1b24de0ba
 id: ss-dre
-name: South Sudan - DRE Planning Platform
-type: vida
-updatedAt: '2020-10-13'
+name: South Sudan DRE Atlas
+type: VIDA
+updatedAt: '2025-01-01'
 version: External

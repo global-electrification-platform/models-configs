@@ -1,12 +1,14 @@
 attribution:
-  author: Vida
+  author: VIDA
   url: https://vida.place
 baseYear: 2020
 country: AO
-description: DRE Planning -- TBD Angola
+description: This external platform allows users to dive into the settlement-level
+  details of planning for Distributed Renewable Energy (DRE). Identify and explore
+  population, number of buildings, and demand in settlements across the country.
 externalUrl: https://map.vida.place/public/workspace/9908b33a-cef2-4b7a-adff-51daef602248
 id: ao-dre
-name: Angola - DRE Planning Platform
-type: vida
-updatedAt: '2020-10-13'
+name: Angola DRE Atlas
+type: VIDA
+updatedAt: '2025-01-01'
 version: External

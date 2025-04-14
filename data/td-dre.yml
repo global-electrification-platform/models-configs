@@ -1,12 +1,14 @@
 attribution:
-  author: Vida
+  author: VIDA
   url: https://vida.place
 baseYear: 2020
 country: TD
-description: DRE Planning -- TBD Chad
+description: This external platform allows users to dive into the settlement-level
+  details of planning for Distributed Renewable Energy (DRE). Identify and explore
+  population, number of buildings, and demand in settlements across the country.
 externalUrl: https://map.vida.place/public/workspace/b4dfa01d-4baa-4bd3-a10e-7de718222029
 id: td-dre
-name: Chad - DRE Planning Platform
-type: vida
-updatedAt: '2020-10-13'
+name: Chad DRE Atlas
+type: VIDA
+updatedAt: '2025-01-01'
 version: External

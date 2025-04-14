@@ -1,12 +1,14 @@
 attribution:
-  author: Vida
+  author: VIDA
   url: https://vida.place
 baseYear: 2020
 country: KH
-description: DRE Planning -- TBD Cambodia
+description: This external platform allows users to dive into the settlement-level
+  details of planning for Distributed Renewable Energy (DRE). Identify and explore
+  population, number of buildings, and demand in settlements across the country.
 externalUrl: https://map.vida.place/public/workspace/61fc541b-32d3-4eed-8689-1931f09b0593
 id: kh-dre
-name: Cambodia - DRE Planning Platform
-type: vida
-updatedAt: '2020-10-13'
+name: Cambodia DRE Atlas
+type: VIDA
+updatedAt: '2025-01-01'
 version: External

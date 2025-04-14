@@ -1,13 +1,13 @@
 id: '%s-dre'
-name: '%s - DRE Planning Platform'
-updatedAt: '2020-10-13'
+name: '%s DRE Atlas'
+updatedAt: '2025-01-01'
 baseYear: 2020
 version: 'External'
-type: vida
+type: VIDA
 country:
 externalUrl:
 description:
-  'DRE Planning -- TBD %s'
+  'This external platform allows users to dive into the settlement-level details of planning for Distributed Renewable Energy (DRE). Identify and explore population, number of buildings, and demand in settlements across the country.'
 attribution:
-  author: 'Vida'
+  author: 'VIDA'
   url: 'https://vida.place'

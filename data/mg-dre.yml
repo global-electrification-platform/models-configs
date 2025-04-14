@@ -1,12 +1,14 @@
 attribution:
-  author: Vida
+  author: VIDA
   url: https://vida.place
 baseYear: 2020
 country: MG
-description: DRE Planning -- TBD Madagascar
+description: This external platform allows users to dive into the settlement-level
+  details of planning for Distributed Renewable Energy (DRE). Identify and explore
+  population, number of buildings, and demand in settlements across the country.
 externalUrl: https://map.vida.place/public/workspace/3564d388-ee62-4e53-97bc-03cdd9b05cc9
 id: mg-dre
-name: Madagascar - DRE Planning Platform
-type: vida
-updatedAt: '2020-10-13'
+name: Madagascar DRE Atlas
+type: VIDA
+updatedAt: '2025-01-01'
 version: External

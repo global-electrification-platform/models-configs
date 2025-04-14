@@ -1,12 +1,14 @@
 attribution:
-  author: Vida
+  author: VIDA
   url: https://vida.place
 baseYear: 2020
 country: FM
-description: DRE Planning -- TBD Micronesia
+description: This external platform allows users to dive into the settlement-level
+  details of planning for Distributed Renewable Energy (DRE). Identify and explore
+  population, number of buildings, and demand in settlements across the country.
 externalUrl: https://map.vida.place/public/workspace/90a28b51-ba9a-44e0-b82b-4463bed64672
 id: fm-dre
-name: Micronesia - DRE Planning Platform
-type: vida
-updatedAt: '2020-10-13'
+name: Micronesia DRE Atlas
+type: VIDA
+updatedAt: '2025-01-01'
 version: External

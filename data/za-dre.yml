@@ -1,12 +1,14 @@
 attribution:
-  author: Vida
+  author: VIDA
   url: https://vida.place
 baseYear: 2020
 country: ZA
-description: DRE Planning -- TBD South Africa
+description: This external platform allows users to dive into the settlement-level
+  details of planning for Distributed Renewable Energy (DRE). Identify and explore
+  population, number of buildings, and demand in settlements across the country.
 externalUrl: https://map.vida.place/public/workspace/a2e8b109-8b3c-40e9-b525-31b388c031f9
 id: za-dre
-name: South Africa - DRE Planning Platform
-type: vida
-updatedAt: '2020-10-13'
+name: South Africa DRE Atlas
+type: VIDA
+updatedAt: '2025-01-01'
 version: External

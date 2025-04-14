@@ -1,12 +1,14 @@
 attribution:
-  author: Vida
+  author: VIDA
   url: https://vida.place
 baseYear: 2020
 country: CG
-description: DRE Planning -- TBD Congo
+description: This external platform allows users to dive into the settlement-level
+  details of planning for Distributed Renewable Energy (DRE). Identify and explore
+  population, number of buildings, and demand in settlements across the country.
 externalUrl: https://map.vida.place/public/workspace/6ef3e414-9e01-44a8-9272-7358a368778a
 id: cg-dre
-name: Congo - DRE Planning Platform
-type: vida
-updatedAt: '2020-10-13'
+name: Congo DRE Atlas
+type: VIDA
+updatedAt: '2025-01-01'
 version: External

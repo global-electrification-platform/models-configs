@@ -1,12 +1,14 @@
 attribution:
-  author: Vida
+  author: VIDA
   url: https://vida.place
 baseYear: 2020
 country: PK
-description: DRE Planning -- TBD Pakistan
+description: This external platform allows users to dive into the settlement-level
+  details of planning for Distributed Renewable Energy (DRE). Identify and explore
+  population, number of buildings, and demand in settlements across the country.
 externalUrl: https://map.vida.place/public/workspace/114d1c69-eb81-4e49-8434-0f038854f4a0
 id: pk-dre
-name: Pakistan - DRE Planning Platform
-type: vida
-updatedAt: '2020-10-13'
+name: Pakistan DRE Atlas
+type: VIDA
+updatedAt: '2025-01-01'
 version: External

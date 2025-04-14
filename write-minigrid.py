@@ -15,7 +15,7 @@ for country in countries:
     data['name'] = data['name'] % country['name']
     data['country'] = country['iso2'].upper()
     data['externalUrl'] = country['url']
-    data['description'] = data['description'] % country['name']
+#    data['description'] = data['description'] % country['name']
 
     with open('data/%s-dre.yml' % country['iso2'].lower(), 'w') as f:
         yaml.dump(data, f)
