@@ -6,13 +6,14 @@ with open('minigrid.yml', 'r') as f:
 
 with open('minigrid-iso.csv', 'r') as f:
     reader = csv.DictReader(f, ['name', 'url', 'iso3', 'iso2'])
+    next(reader)
     countries = [r for r in reader]
 
 for country in countries:
     data = dict(base)
     data['id'] = data['id'] % country['iso2'].lower()
     data['name'] = data['name'] % country['name']
-    data['country'] = country['iso2'].lower()
+    data['country'] = country['iso2'].upper()
     data['externalUrl'] = country['url']
     data['description'] = data['description'] % country['name']
 
