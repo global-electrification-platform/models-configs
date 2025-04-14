@@ -1,0 +1,13 @@
+id: '%s-dre'
+name: '%s - DRE Planning Platform'
+updatedAt: '2020-10-13'
+baseYear: 2020
+version: 'External'
+type: vida
+country:
+externalUrl:
+description:
+  'DRE Planning -- TBD %s'
+attribution:
+  author: 'Vida'
+  url: 'https://vida.place'
