@@ -10,6 +10,9 @@ URL = os.environ.get('CKAN_URL')
 AUTH = None
 API_KEY = os.environ.get('CKAN_API_KEY')
 
+GROUP_ID = '960aa075-ab33-43dd-a09b-f3c7a46cbff1'
+owner_org = 'be8e5286-de7f-4759-9766-8b045e698798'
+
 with open(sys.argv[1], 'r') as f:
     reader = csv.DictReader(f)
     data = list(reader)
@@ -17,7 +20,7 @@ with open(sys.argv[1], 'r') as f:
 def dataset_name(line):
     return line['Final Link'].split('/')[-1]
 
-owner_org = 'be8e5286-de7f-4759-9766-8b045e698798'
+
 
 def to_dataset(line):
     fields = {
@@ -66,17 +69,24 @@ def to_dataset(line):
 
 
 def _fetch(action, params):
-    return requests.get(URL + 'api/action/' + action,
-                        headers={'X-CKAN-API-Key':API_KEY},
-                        auth=AUTH,
-                        params=params).json()['result']
+
+    resp = requests.get(URL + 'api/action/' + action,
+                            headers={'X-CKAN-API-Key':API_KEY},
+                            auth=AUTH,
+                            params=params)
+    return resp.json()['result']
+
 
 def _modify(action, data):
-    return requests.post(URL + 'api/action/' + action,
-                        headers={'X-CKAN-API-Key':API_KEY},
-                        auth=AUTH,
-                        data=data).json()['result']
-
+    try:
+        resp = requests.post(URL + 'api/action/' + action,
+                             headers={'X-CKAN-API-Key':API_KEY},
+                             auth=AUTH,
+                             data=data)
+        return resp.json()['result']
+    except Exception as msg:
+        pdb.post_mortem()
+        raise
 
 
 def fetch_dataset(line):
@@ -127,9 +137,74 @@ def update_resource_names(line):
         print("patched %s: %s" % (dataset_name(line), name_map[resource['name']]))
 
 
-def add_v2_resources(line):
+def upload_resource(data, dataset):
+    data['package_id'] = dataset['id']
+    resource_create(data)
 
+
+def add_new_resources(line, resources):
     dataset = fetch_dataset(line)
+
+    for resource in resources:
+        for existing in dataset['resources']:
+            if resource['name'] == existing['name']:
+                for k,v in resource.items():
+                    if existing.get(k,None) != v:
+                        break
+                else:
+                    break
+
+                resource['id'] = existing['id']
+                resource_patch(resource)
+                break
+        else:
+            upload_resource(resource, dataset)
+
+
+
+
+def add_v3_resources(line):
+    iso2 = line['ISO2']
+
+    resources = [
+        {
+            'name': 'GEP Climate Energy Modeling Parameters',
+            'format': 'CSV',
+            'description': 'Input parameters for the Climate model',
+            'url': 'https://gep-source-archive.s3.amazonaws.com/GEP-Climate-2022/%s/inputs/%s-3-country-inputs.csv' % (iso2, iso2),
+            'data-transform': '',
+        },
+        {
+            'name': 'GEP Climate Secenario Specs',
+            'format': 'XLSX',
+            'description': 'Scenario Option Specifications',
+            'url': 'https://gep-source-archive.s3.amazonaws.com/GEP-Climate-2022/%s/inputs/%s-3-specs.xlsx' % (iso2, iso2),
+            'data-transform': '',
+        },
+        {
+            'name': 'GEP Climate Scenario Results',
+            'format': 'ZIP',
+            'description': 'Zipfile of all 95 scenario results in CSV format',
+            'url': 's3://gep-source-archive/GEP-Climate-2022/%s/outputs/%s-3-scenarios-results.zip' %(iso2, iso2),
+        },
+        {
+            'name': 'GEP Climate Scenario Summaries',
+            'format': 'ZIP',
+            'description': 'Zipfile of all 95 scenario summaries in CSV format',
+            'url': 'https://gep-source-archive.s3.amazonaws.com/GEP-Climate-2022/%s/outputs/%s-3-scenarios-summaries.zip' %(iso2, iso2),
+        },
+        {
+            'name': 'GEP Climate Output Column Description',
+            'format': 'DOC',
+            'description': 'Description of the output columns in the Scenario Results',
+            'url': 'https://gep-source-archive.s3.amazonaws.com/GEP-Climate-2022/GEP V.3 Column Description.xlsx',
+        },
+    ]
+
+    return add_new_resources(line, resources)
+
+
+def add_v2_resources(line):
     iso2 = line['ISO2']
 
     resources = [
@@ -165,21 +240,9 @@ def add_v2_resources(line):
         }
     ]
 
-    def upload_resource(data):
-        data['package_id'] = dataset['id']
-        resource_create(data)
-
-    for resource in resources:
-        for existing in dataset['resources']:
-            if resource['name'] == existing['name']:
-                resource['id'] = existing['id']
-                resource_patch(resource)
-                break
-        else:
-            upload_resource(resource)
+    return add_new_resources(line, resources)
 
 def add_v1_resources(line):
-    dataset = fetch_dataset(line)
     iso2 = line['ISO2']
 
     resources = [
@@ -209,19 +272,7 @@ def add_v1_resources(line):
         },
     ]
 
-    def upload_resource(data):
-        data['package_id'] = dataset['id']
-        resource_create(data)
-
-    for resource in resources:
-        for existing in dataset['resources']:
-            if resource['name'] == existing['name']:
-                resource['id'] = existing['id']
-                resource_patch(resource)
-                break
-        else:
-            upload_resource(resource)
-
+    return add_new_resources(line, resources)
 
 
 
@@ -229,9 +280,11 @@ def sort_resource_order(line):
     dataset = fetch_dataset(line)
     v1 = [r for r in dataset['resources'] if 'V1' in r['name']]
     v2 = [r for r in dataset['resources'] if 'V2' in r['name']]
-    others = [r for r in dataset['resources'] if not ('V1' in r['name'] or 'V2' in  r['name'])]
+    v3 = [r for r in dataset['resources'] if 'Climate' in r['name']]
+    others = [r for r in dataset['resources'] if not ('V1' in r['name'] or 'V2' in  r['name'] or 'Climate' in r['name'])]
 
     resources = others
+    resources.extend(v3)
     resources.extend(v2)
     resources.extend(v1)
     if not len(resources) == len(dataset['resources']):
@@ -239,11 +292,33 @@ def sort_resource_order(line):
         raise Exception()
     resource_reorder({'id': dataset['id'], 'order': [r['id'] for r in resources]})
 
+def update_dataset(dataset, line):
+    print("Patching %s" % line['country'])
+
+    if not dataset.get('groups'):
+        _modify('member_create', {
+            'id': GROUP_ID,
+            'object': dataset['id'],
+            'object_type': 'package',
+            'capacity': 'public',
+            })
+
+    return dataset_patch({'id': dataset['id'],
+                          'url': 'https://electrifynow.energydata.info/countries/%s/models' % line['ISO2'].upper(),
+                          'topic': ['Energy access'],
+                          'notes': '''[The Global Electrification Platform (GEP)](https://electrifynow.energydata.info) is a multi-phase project led by the World Bank to standardize and simplify the use of geospatial tools for least-cost electrification planning. The GEP provides a high-level overview of the technology mix (grid and off-grid) required to achieve universal access by 2030. It focuses on the countries with access rates below 90 percent and the 50 countries with the highest population deficit, with an intermediated investment prospectus for 2025. The results of the model indicate the least-cost investment requirements based on publicly available information on demand and existing infrastructure.'''
+                          })
+
 
 import pdb
 
 for line in data:
-    ensure_dataset(line)
-    update_resource_names(line)
-    add_v2_resources(line)
-    sort_resource_order(line)
+
+    dataset = fetch_dataset(line)
+    dataset = update_dataset(dataset, line)
+
+    # print ("Adding resources %s" % line['country'])
+    # add_v3_resources(line)
+
+    #print ("Sorting resources %s" % line['country'])
+    #sort_resource_order(line)
